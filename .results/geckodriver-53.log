@@ -1,0 +1,22 @@
+1677525710917	geckodriver	INFO	Listening on 127.0.0.1:58260
+1677525714002	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58261" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofile2dgZDs"
+1677525714322	Marionette	INFO	Marionette enabled
+1677525714326	Marionette	INFO	Listening on port 58273
+WebDriver BiDi listening on ws://localhost:58261
+Read port: 58273
+1677525714477	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofile2dgZDs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58261/devtools/browser/5ff97732-24cb-437b-8d67-24228e64efab
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/libjs?v=mG9H7KbCeWBx0FwszPdImN3AsLDJG4SJmZGPIWSkFZI1, line 30233: TypeError: tokenObj is null
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: Error: Syntax error, unrecognized expression: https://www.orbia.ag/comprar/Proposta
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: TypeError: Illegal constructor.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+1677525736420	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+JavaScript error: https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1 line 515 > injectedScript, line 1: TypeError: a is null
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1677528429650	Marionette	INFO	Stopped listening on port 58273

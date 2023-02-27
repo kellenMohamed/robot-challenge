@@ -1,0 +1,25 @@
+1677518671648	geckodriver	INFO	Listening on 127.0.0.1:61950
+1677518674768	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofiledLdTVy"
+1677518675387	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kellen.belotto\\AppData\\Local\\Temp\\rust_mozprofiledLdTVy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61951/devtools/browser/f052923a-6cc6-49be-87cf-20292bfa1c44
+1677518678270	Marionette	INFO	Listening on port 61981
+Read port: 61981
+1677518678350	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/libjs?v=mG9H7KbCeWBx0FwszPdImN3AsLDJG4SJmZGPIWSkFZI1, line 30233: TypeError: tokenObj is null
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: Error: Syntax error, unrecognized expression: https://www.orbia.ag/comprar/Proposta
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: TypeError: Illegal constructor.
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: TypeError: Illegal constructor.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.gstatic.com/recaptcha/releases/Nh10qRQB5k2ucc5SCBLAQ4nA/styles__ltr.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.gstatic.com/recaptcha/releases/Nh10qRQB5k2ucc5SCBLAQ4nA/styles__ltr.css without a browsingContextID set
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1677518755390	Marionette	INFO	Stopped listening on port 61981
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

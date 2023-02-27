@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230227 20:23:02.965" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Story 2 Happy Flow" source="C:\GIT\robot-challenge\testes\CotarInsumos.robot">
+<test id="s1-t1" name="Caso de Teste 01: Cota Insumos com usuario pre-criado" line="6">
+<kw name="Dado que eu quero cotar insumos" library="resource-cotar-insumos">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230227 20:23:03.555" level="INFO">Opening browser 'firefox' to base url 'https://www.orbia.ag/'.</msg>
+<msg timestamp="20230227 20:23:03.557" level="INFO">Firefox driver log is always forced to to: C:\GIT\robot-challenge\.results\geckodriver-65.log</msg>
+<status status="PASS" starttime="20230227 20:23:03.554" endtime="20230227 20:23:12.500"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230227 20:23:12.500" endtime="20230227 20:23:12.504"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="menu-main-navigation"]/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:12.504" level="INFO">Clicking element 'xpath=//*[@id="menu-main-navigation"]/li[4]/a'.</msg>
+<status status="PASS" starttime="20230227 20:23:12.504" endtime="20230227 20:23:14.052"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=btnComecarCotacao</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230227 20:23:14.052" endtime="20230227 20:23:14.090"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=btnComecarCotacao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:14.090" level="INFO">Clicking element 'id=btnComecarCotacao'.</msg>
+<status status="PASS" starttime="20230227 20:23:14.090" endtime="20230227 20:23:16.419"/>
+</kw>
+<status status="PASS" starttime="20230227 20:23:03.554" endtime="20230227 20:23:16.419"/>
+</kw>
+<kw name="E eu tenho Orbia login valido" library="resource-cotar-insumos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="loginEmail"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:16.420" level="INFO">Typing text 'kellen.belotto@gmail.com' into text field 'xpath=//*[@id="loginEmail"]'.</msg>
+<status status="PASS" starttime="20230227 20:23:16.420" endtime="20230227 20:23:16.476"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="password"]</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:16.477" level="INFO">Typing text 'Test123#' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230227 20:23:16.476" endtime="20230227 20:23:16.527"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//button[@id="login"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230227 20:23:16.527" endtime="20230227 20:23:16.542"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@id="login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:16.542" level="INFO">Clicking button 'xpath=//button[@id="login"]'.</msg>
+<status status="PASS" starttime="20230227 20:23:16.542" endtime="20230227 20:23:16.789"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230227 20:23:18.790" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230227 20:23:16.789" endtime="20230227 20:23:18.790"/>
+</kw>
+<status status="PASS" starttime="20230227 20:23:16.420" endtime="20230227 20:23:18.790"/>
+</kw>
+<kw name="Quando eu preencher o formulario de cotacao" library="resource-cotar-insumos">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//select[@id="dropDownEstados"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230227 20:23:18.792" endtime="20230227 20:23:20.071"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dropDownEstados"]/option[contains(text(),"AC")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:20.071" level="INFO">Clicking element 'xpath=//*[@id="dropDownEstados"]/option[contains(text(),"AC")]'.</msg>
+<status status="PASS" starttime="20230227 20:23:20.071" endtime="20230227 20:23:20.293"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[@id="dropDownCidades"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:20.294" level="INFO">Clicking element 'xpath=//select[@id="dropDownCidades"]'.</msg>
+<status status="PASS" starttime="20230227 20:23:20.293" endtime="20230227 20:23:20.546"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dropDownCidades"]/option[contains(text(),"Assis Brasil")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 20:23:20.547" level="INFO">Clicking element 'xpath=//*[@id="dropDownCidades"]/option[contains(text(),"Assis Brasil")]'.</msg>
+<msg timestamp="20230227 20:23:20.615" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-95.png"&gt;&lt;img src="selenium-screenshot-95.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230227 20:23:20.615" level="FAIL">Element with locator 'xpath=//*[@id="dropDownCidades"]/option[contains(text(),"Assis Brasil")]' not found.</msg>
+<status status="FAIL" starttime="20230227 20:23:20.547" endtime="20230227 20:23:20.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[@id="dropDownPrazoMaximoEntrega"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.618" endtime="20230227 20:23:20.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dropDownPrazoMaximoEntrega"]/option[contains(text(),"Março 2023")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.618" endtime="20230227 20:23:20.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[id="dropDownFormaDePagamento"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.619" endtime="20230227 20:23:20.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dropDownFormaDePagamento"]/option[contains(text(),"Boleto a prazo: 60 dias")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.619" endtime="20230227 20:23:20.619"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dropDownFormaDePagamento"]/option[contains(text(),"Boleto a prazo: 60 dias")]</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.619" endtime="20230227 20:23:20.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.619" endtime="20230227 20:23:20.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[@id="uploadFile"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.619" endtime="20230227 20:23:20.620"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//div[@id="uploadFile"]</arg>
+<arg>${FILE}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.620" endtime="20230227 20:23:20.620"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="file-0"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.620" endtime="20230227 20:23:20.620"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230227 20:23:20.620" endtime="20230227 20:23:20.620"/>
+</kw>
+<status status="FAIL" starttime="20230227 20:23:18.791" endtime="20230227 20:23:20.620"/>
+</kw>
+<kw name="E clicar no botao Solicitar Cotacao" library="resource-cotar-insumos">
+<status status="NOT RUN" starttime="20230227 20:23:20.621" endtime="20230227 20:23:20.621"/>
+</kw>
+<kw name="Então uma mensagem de sucesso é exibida" library="resource-cotar-insumos">
+<status status="NOT RUN" starttime="20230227 20:23:20.621" endtime="20230227 20:23:20.621"/>
+</kw>
+<status status="FAIL" starttime="20230227 20:23:03.553" endtime="20230227 20:23:20.622">Element with locator 'xpath=//*[@id="dropDownCidades"]/option[contains(text(),"Assis Brasil")]' not found.</status>
+</test>
+<doc>Test Compras Web Sauce Demo</doc>
+<status status="FAIL" starttime="20230227 20:23:02.967" endtime="20230227 20:23:20.623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Story 2 Happy Flow">Test Story 2 Happy Flow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
