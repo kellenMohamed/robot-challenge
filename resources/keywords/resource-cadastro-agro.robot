@@ -13,14 +13,15 @@ Library                 FakerLibrary
 
 *** Variable ***
 
-${Browser}          chrome
-${URL}              https://www.orbia.ag/
-${CellPhone}        16991565721
-${token1}           1
-${token2}           2
-${token3}           3
-${token4}           4
-${token5}           5
+${Browser}              chrome
+${URL}                  https://www.orbia.ag/
+${CellPhone}            16991565721
+${token1}               1
+${token2}               2
+${token3}               3
+${token4}               4
+${token5}               5
+${mensagem_esperada}    "Código inválido ou expirado. Por favor, tente novamente."
 
 *** Keywords ***
 
@@ -34,6 +35,7 @@ Cadastrar Pessoa
   Maximize Browser Window
   Wait Until Element Is Visible       xpath=/html/body/div[1]/div[1]/div[1]/div[2]/div/div[1]/div[1]/a/img
 
+  # Save Fake data for next tests:
   ${NOMEFAKE}                 FakerLibrary.Name
   ${ENDERECOFAKE}             FakerLibrary.Address
   ${TELEFONEFAKE}             FakerLibrary.Phone Number
@@ -44,7 +46,8 @@ Cadastrar Pessoa
   ...                         Telefone Aleatório: ${TELEFONEFAKE}  Cidade Aleatória: ${CIDADEFAKE}
   ...                         CódigoPostal Aleatório: ${CODIGOPOSTALFAKE}   Trabalho: ${TRABALHOFAKE}
   Log Many                    @{PESSOA}
-
+  
+  # Steps that don't need from Fake data
   Click Element                   xpath=//*[@id="userMenuItem"]/a/span/small
   Element Should Be Visible       xpath= //*[@id="cell"]     
   Input Text                      xpath=//*[@id="cell"]        ${CellPhone}
@@ -62,7 +65,7 @@ Cadastrar Pessoa
   Input Text    //*[@id="token4"]   ${token4} 
   Input Text    //*[@id="token5"]   ${token5} 
   Sleep    20s
-
+  
 Fechar o Navegador
     Close Browser
-    Log To Console                       "Step 'Fechar o Navegador - COmpra concluida' worked"
+    Log To Console                   "Step 'Fechar o Navegador - Compra concluida' worked"

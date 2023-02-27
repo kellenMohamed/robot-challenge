@@ -20,20 +20,39 @@ ${FirstNameXSS}     <SCRIPT type="text/javascript">var adr = '../evil.php?cakemo
 ${LastNameXSS}      <SCRIPT type="text/javascript">var adr = '../evil.php?cakemonster=' + escape(document.cookie);</SCRIPT>
 ${ZipCodeXSS}       <SCRIPT type="text/javascript">var adr = '../evil.php?cakemonster=' + escape(document.cookie);</SCRIPT>
 @{FirstNameList}   
-...         Test FirstName     
-...         123    
-...         @!*
+...                 Test FirstName     
+...                 123    
+...                 @!*
 @{LastNameList}   
-...         Test LastName     
-...         123    
-...         @@@#$$%
+...                 Test LastName     
+...                 123    
+...                 @@@#$$%
 @{ZipCodeList}   
-...         13456
-...         1345689 
-...         134569090
-...         134@689    
-...         !345689
-...         text
+...                 13456
+...                 1345689 
+...                 134569090
+...                 134@689    
+...                 !345689
+...                 text
+${mensagem_esperada}    Error: First Name is required
+
+
+${invalidUser}    
+...                 test@test.com
+...                 standard_use
+...                 1234569
+...                 stand@rd_user
+...                 standard_us3r
+...                 standard_userstandard_userstandard_userstandard_userstandard_user
+                    
+${invalidPsw}       secret_saucer
+...                 test@test.com
+...                 standard_use
+...                 1234569
+...                 stand@rd_user
+...                 standard_us3r
+...                 secret_saucesecret_saucesecret_saucesecret_saucesecret_saucesecret_sauce
+
 
 *** Keywords ***
 
@@ -56,8 +75,8 @@ Remover os produtos unahppy
 Verificar carrinho unahppy
     Verificar carrinho
 
-Incluir Dados de Postagem unahppy
-    Click Button                         xpath=//*[@id="continue"]
+Incluir Dados de Postagem unhappy
+    Click Button                          xpath=//*[@id="continue"]
     Element Should Contain                xpath=//*[@id="checkout_info_container"]/div/form/div[1]/div[4]    Error: First Name is required
     Sleep   1s
     FOR    ${FirstNameList}    IN    @{FirstNameList}
@@ -94,6 +113,7 @@ Incluir Dados de Postagem unahppy
     Click Button                        xpath=//*[@id="continue"]
     Sleep    1s
     Log To Console                      "Step 'Incluir Dados de Postagem unahppy' worked"
+    Sleep   20s
 
 Verificar resumo da compra unhappy
     Verificar resumo da compra
@@ -103,4 +123,4 @@ Concluir compra unhappy
 
 Fechar o Navegador unahppy
     Close Browser
-    Log To Console                       "Step 'Fechar o Navegador - unahppy' worked"
+    Log To Console                       "Step 'Fechar o Navegador - unhappy' worked"

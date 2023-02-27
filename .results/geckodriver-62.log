@@ -1,0 +1,14 @@
+1677534922689	geckodriver	INFO	Listening on 127.0.0.1:51944
+1677534925775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51945" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofileQtzdJv"
+1677534926118	Marionette	INFO	Marionette enabled
+1677534926121	Marionette	INFO	Listening on port 51954
+WebDriver BiDi listening on ws://localhost:51945
+Read port: 51954
+1677534926272	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofileQtzdJv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51945/devtools/browser/788836fc-59e8-4577-b89f-68ff0347c89e
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/libjs?v=mG9H7KbCeWBx0FwszPdImN3AsLDJG4SJmZGPIWSkFZI1, line 30233: TypeError: tokenObj is null
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: Error: Syntax error, unrecognized expression: https://www.orbia.ag/comprar/Proposta
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1677535195021	Marionette	INFO	Stopped listening on port 51954
+[Parent 25968, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

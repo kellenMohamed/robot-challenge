@@ -1,0 +1,16 @@
+1677520863390	geckodriver	INFO	Listening on 127.0.0.1:64424
+1677520866469	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64425" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofilegKHIls"
+1677520866841	Marionette	INFO	Marionette enabled
+1677520866846	Marionette	INFO	Listening on port 64436
+WebDriver BiDi listening on ws://localhost:64425
+Read port: 64436
+1677520867001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofilegKHIls\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64425/devtools/browser/c1ae78a2-8b33-4a9f-a153-52dbcf0d416f
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/libjs?v=mG9H7KbCeWBx0FwszPdImN3AsLDJG4SJmZGPIWSkFZI1, line 30233: TypeError: tokenObj is null
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: Error: Syntax error, unrecognized expression: https://www.orbia.ag/comprar/Proposta
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: TypeError: Illegal constructor.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+JavaScript error: https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1 line 515 > injectedScript, line 1: TypeError: a is null
+1677521319186	Marionette	INFO	Stopped listening on port 64436

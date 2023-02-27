@@ -1,0 +1,31 @@
+1677528529784	geckodriver	INFO	Listening on 127.0.0.1:61998
+1677528532891	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61999" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofiled1mx6U"
+1677528533193	Marionette	INFO	Marionette enabled
+1677528533197	Marionette	INFO	Listening on port 62011
+WebDriver BiDi listening on ws://localhost:61999
+Read port: 62011
+1677528533324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KELLEN~1.BEL\\AppData\\Local\\Temp\\rust_mozprofiled1mx6U\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61999/devtools/browser/6dd0e585-65bb-46dc-986d-9d1f63680884
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/libjs?v=mG9H7KbCeWBx0FwszPdImN3AsLDJG4SJmZGPIWSkFZI1, line 30233: TypeError: tokenObj is null
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: Error: Syntax error, unrecognized expression: https://www.orbia.ag/comprar/Proposta
+JavaScript error: https://www.orbia.ag/assets/bundles/BRBAY/jq?v=V3hENngks5zGRpxQ-dnGP8jk-96BRSxUmpgRWhfTPGE1, line 1: TypeError: Illegal constructor.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.orbia.ag."
+JavaScript error: https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1 line 515 > injectedScript, line 1: TypeError: a is null
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 594"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:594:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 594, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 594: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: Error: Failed to fetch https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1. Code 2152924148.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:583:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 583, column: 16
+console.error: (new Error("Failed to fetch https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1. Code 2152924148.", "resource://devtools/shared/DevToolsUtils.js", 583))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 583: Error: Failed to fetch https://www.orbia.ag/comprar/Proposta/PreencherCotacao?tipoCotacaoId=1. Code 2152924148.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1677528886705	Marionette	INFO	Stopped listening on port 62011
